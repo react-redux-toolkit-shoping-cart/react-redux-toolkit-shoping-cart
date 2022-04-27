@@ -1,6 +1,7 @@
 import { cartActions } from "./cart-slice";
 import { uiActions } from "./ui-slice";
 
+// redux action creator used by useDispatch function hooks
 export const sendCart = (cart) => {
   return async (dispatch) => {
     dispatch(

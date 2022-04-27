@@ -3,6 +3,7 @@ import authSlice from "./auth-slice";
 import cartSlice from "./cart-slice";
 import uiSlice from "./ui-slice";
 
+// Create store using redux toolkit
 const store = configureStore({
   reducer: {
     auth: authSlice.reducer,

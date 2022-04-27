@@ -11,6 +11,9 @@ import { fetchCart, sendCart } from "./store/cart-action";
 function App() {
   const isLogedIn = useSelector((state) => state.auth.isLogedIn);
   const cart = useSelector((state) => state.cart);
+  /**
+   * useDispatch hooks, takes an object or an function. And the function take the dispatch argument and called action creator
+   */
   const dispatch = useDispatch();
   useEffect(() => {
     if(cart.touched) {
